@@ -5,6 +5,8 @@
  */
 package ch.conceptforge.exercicespoo.Exercice03;
 
+import java.util.Scanner;
+
 /**
  *
  * @author renob
@@ -15,7 +17,11 @@ public class Exercice03 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Entez la hauteur du sapin : ");
+        int hauteur = sc.nextInt();
+        Sapin monBeauSapin = new Sapin(hauteur);
+        
     }
     
 }
