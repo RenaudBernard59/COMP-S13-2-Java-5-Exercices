@@ -18,9 +18,13 @@ public class Exercice04 {
      */
     public static void main(String[] args) {
         int reponse;
+        char continue;
         Scanner scan = new Scanner(System.in);
         System.out.println("Entez un entier entre 0 et 100 à deviner: ");
         reponse = scan.nextInt();
-        Randomizer partie = new Randomizer(reponse);
+        Randomizer partie = new Randomizer();
+       // String continue = scan.next();
+            
+       
         }
 }
