@@ -15,10 +15,10 @@ public class Sapin {
     
     public Sapin(int hauteur) {
         this.hauteur = hauteur;
-        System.out.println(ligne + "\n");
+        System.out.println(ligne);
         for (int i = 1; i <= hauteur ; i++) {
             ligne = ligne + " *";
-            System.out.println(ligne + "\n");
+            System.out.println(ligne);
         }//END FOR
                 
     }//END Construct
