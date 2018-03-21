@@ -29,7 +29,7 @@ public class NumberBot {
         System.out.println(askReal);
         unReal = sc.nextFloat();
         
-        maSomme = unEntier + unReal;
+        maSomme = (float) unEntier + unReal;
         maMoy = maSomme / 2;
         
         
