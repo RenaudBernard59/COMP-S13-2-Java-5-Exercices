@@ -15,6 +15,7 @@ public class KilometresAPied {
 //    2 kilomètres à pied, ça use, ça use,
 //    2 kilomètres à pied ça use les souliers. 
     private String kilom = " kilomètre à pied, ça use";
+    private String kiloms = " kilomètres à pied, ça use";
     private String caUse = ", ça use,\n";
     private String souliers = " les souliers.\n";
     private int i;
@@ -22,35 +23,14 @@ public class KilometresAPied {
     public KilometresAPied(int i) {
         this.i = i;
         for (i = 1; i <= 15 ; i++) {
+            if (i == 1) {
             System.out.println(i + kilom + caUse + i + kilom + souliers);
-        
+            } else {
+            System.out.println(i + kiloms + caUse + i + kiloms + souliers);
+            }
         }//END For
-    }
-        
-
-    public String getKilom() {
-        return kilom;
-    }
-
-    public void setKilom(String kilom) {
-        this.kilom = kilom;
-    }
-
-    public String getCaUse() {
-        return caUse;
-    }
-
-    public void setCaUse(String caUse) {
-        this.caUse = caUse;
-    }
-
-    public String getSouliers() {
-        return souliers;
-    }
-
-    public void setSouliers(String souliers) {
-        this.souliers = souliers;
-    }
+               
+    }//END Constructor
 
     public int getI() {
         return i;
@@ -59,8 +39,4 @@ public class KilometresAPied {
     public void setI(int i) {
         this.i = i;
     }
-        
-        
-        
-        
 }
