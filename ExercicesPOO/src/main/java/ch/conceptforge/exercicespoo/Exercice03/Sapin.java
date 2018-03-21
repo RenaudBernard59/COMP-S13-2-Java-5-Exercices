@@ -37,8 +37,22 @@ public class Sapin {
         }//END FOR
         ////////////////////////////////////////////////////////
         System.out.println("Sapin horizontal");
+        ligne = "";
+        for (int i = 1; i <= hauteur ; i++) {
+            preLine = "";
+            
+            ligne = ligne + "*";
+            System.out.println(preFixe +preLine + ligne);
+        }//END FOR
         
-        
+        for (int j = hauteur; j > 0 ; j--) {
+            preLine = "";
+            ligne = "";
+                for (int i = 1; i < j ; i++) {
+                ligne = ligne + "*";
+                }//END FOR
+            System.out.println(preFixe +preLine + ligne);
+        }//END FOR
         
         
         
