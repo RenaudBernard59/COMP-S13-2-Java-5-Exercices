@@ -14,43 +14,35 @@ public class Sapin {
     String ligne = "*";
     String preLine = "";
     String preFixe = "          ";
+    int ligneLength;
     public Sapin(int hauteur) {
         this.hauteur = hauteur;
-       
+        ////////////////////////////////////////////////////////
         System.out.println("Sapin Coller");
-               for (int i = 1; i <= (hauteur /2) ; i++) {
-            preLine = preLine + " ";
-        }//END for
+        System.out.println(preFixe + preLine + ligne);
+        for (int i = 1; i < hauteur ; i++) {
+            ligne = ligne + "**";
+            ligneLength = ligne.length()/2;
+            System.out.println(preFixe +preLine + ligne);
+        }//END FOR
+        ////////////////////////////////////////////////////////
+        System.out.println("Sapin ouvert");
+        ligne = "*";
         System.out.println(preFixe + preLine + ligne);
         for (int i = 1; i < hauteur ; i++) {
             preLine = "";
-            for (int j = 1; j <= ((hauteur-(i)) /2) ; j++) {
-            preLine = preLine + " ";
-            }//END for
-            ligne = ligne + "**";
             
+            ligne = ligne + " *";
             System.out.println(preFixe +preLine + ligne);
         }//END FOR
+        ////////////////////////////////////////////////////////
+        System.out.println("Sapin horizontal");
         
         
         
-        System.out.println("Sapin ouvert");
-        //Preliner
-
-//        for (int i = 1; i <= (hauteur /2) ; i++) {
-//            preLine = preLine + " ";
-//        }//END for
-//        System.out.println(preFixe + preLine + ligne);
-//        for (int i = 1; i < hauteur ; i++) {
-//            preLine = "";
-//            for (int j = 1; j <= ((hauteur-(i*2)) /2) ; j++) {
-//            preLine = preLine + " ";
-//            }//END for
-//                       
-//            ligne = ligne + " *";
-//            System.out.println(preFixe +preLine + ligne);
-//        }//END FOR
-                
+        
+        
+        
     }//END Construct
 
     public int getHauteur() {
