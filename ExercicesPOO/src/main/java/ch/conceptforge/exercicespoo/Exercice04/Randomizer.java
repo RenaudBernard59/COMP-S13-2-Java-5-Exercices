@@ -37,7 +37,7 @@ public class Randomizer {
              } else {
                  System.out.println("Bravo tu as gagner ! \n Score : " + score);
                  System.out.println("Rejouer Y|N");
-                 gagner = true;
+                 gagner = false;
              }//END ifElse
         }//END while
         
