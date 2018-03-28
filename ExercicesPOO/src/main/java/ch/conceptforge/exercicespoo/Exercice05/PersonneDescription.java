@@ -14,10 +14,7 @@ public class PersonneDescription {
     private int taille;
 
     public PersonneDescription(int age, int taille) {
-        this.age = age;
-        this.taille = taille;
-        
-        while (age != 0) {
+        if (age != 0) {
             if (age > 20 && taille < 100) {
                 System.out.println("Vous êtes peut être un nain adulte?");
             } else if (age > 20 && taille > 200) {
@@ -26,11 +23,10 @@ public class PersonneDescription {
                 System.out.println("Vous êtes peut être un bébé ");
             } else if ((age >= 15 && age <= 18) && (taille >= 150 && taille <= 180)) {
                 System.out.println("Vous êtes un ado !");
+            } else {
+                System.out.println("Vous êtes Normal quoi !");
             }
-        }//END While
-        
-        
-        
+        }//END MegaIf
         
     }//END Construct
 
@@ -38,11 +34,19 @@ public class PersonneDescription {
         return age;
     }
 
+    public void setAge(int age) {
+        this.age = age;
+    }
+
     public int getTaille() {
         return taille;
     }
-    
-    
+
+    public void setTaille(int taille) {
+        this.taille = taille;
+    }
+
+
     
     
 }

@@ -12,19 +12,22 @@ import java.util.Scanner;
  * @author renob
  */
 public class Exercice04 {
-
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
         int reponse;
-        char continue;
+        String next = "N";
+        
         Scanner scan = new Scanner(System.in);
         System.out.println("Entez un entier entre 0 et 100 à deviner: ");
         reponse = scan.nextInt();
-        Randomizer partie = new Randomizer();
+        Randomizer partie = new Randomizer(reponse, next);
        // String continue = scan.next();
-            
+        System.out.println("Rejouer Y|N");
+        next = (String) scan.next();
+        if (next == "Yes") {
+            Randomizer Newpartie = new Randomizer(reponse, next);
+        } else {
+            System.out.println("merci d'avoir jouer");
+        }
        
         }
 }
