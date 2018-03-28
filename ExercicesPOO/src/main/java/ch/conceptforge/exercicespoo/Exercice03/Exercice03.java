@@ -20,7 +20,7 @@ public class Exercice03 {
         Scanner sc = new Scanner(System.in);
         System.out.println("Entez la hauteur du sapin : ");
         int hauteur = sc.nextInt();
-        Sapin monBeauSapin = new Sapin(hauteur);
+        SapinV2 monBeauSapin = new SapinV2(hauteur);
         
     }
     

@@ -19,9 +19,9 @@ public class Randomizer {
     private int monNombreAdeviner;
     static final Random random = new Random();
     private Scanner sc = new Scanner(System.in);
+    private String next;
     
-    
-    public Randomizer(int reponse) {
+    public Randomizer(int reponse, String next) {
         monNombreAdeviner = random.nextInt(100) + 1;
         System.out.println("Entez un entier entre 0 et 100 à deviner: ");
              while (gagner) {
@@ -36,12 +36,19 @@ public class Randomizer {
 
              } else {
                  System.out.println("Bravo tu as gagner ! \n Score : " + score);
-                 System.out.println("Rejouer Y|N");
                  gagner = false;
              }//END ifElse
         }//END while
         
     }//END Construct
+
+    public String getNext() {
+        return next;
+    }
+
+    public void setNext(String next) {
+        this.next = next;
+    }
 
     
     
@@ -60,7 +67,6 @@ public class Randomizer {
     public void setScore(int score) {
         this.score = score;
     }
-
     
     
     
